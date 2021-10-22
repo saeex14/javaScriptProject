@@ -33,23 +33,48 @@ const ans1 = document.getElementById('ans1');
 const ans2 = document.getElementById('ans2');
 const ans3 = document.getElementById('ans3');
 const ans4 = document.getElementById('ans4');
+const btn = document.getElementById('btn');
 
 var currentQuestion = 0;
+var rightAns = 0; 
+
 function loadQuiz () {
+  
       const questinEl = dataQuiz[currentQuestion];
       
       if ( currentQuestion <= dataQuiz.length - 1 ) {
           currentQuestion ++;
-      }else{
-          return alert('Quiz is finished');
-      }
 
+          //changing the text of button to undrestand the client that Quiz is finish
+          if (currentQuestion == 4){
+            
+            btn.innerHTML = 'finish';
+          
+        }
+
+      }else{
+            return alert('Quiz is finished');
+      }
+      //set the quiz
       qtn.innerHTML = questinEl.question;
       ans1.innerHTML = questinEl.a;
       ans2.innerHTML = questinEl.b;
       ans3.innerHTML = questinEl.c;
       ans4.innerHTML = questinEl.d;
       
-      
 }
+function selectAns () {
+     const ans = document.querySelectorAll('question');
+     
+     ans.forEach((ans) => {
+
+         console.log(ans.ariaChecked);
+     
+        })
+
+}
+btn.addEventListener('click', () =>{
+    loadQuiz();
+})
+//Initional 
 loadQuiz();

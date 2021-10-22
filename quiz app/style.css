@@ -41,5 +41,8 @@ ul {
 }
 ul li{
     font-size: 1.2rem;
-    padding: 2px;
+    padding:5px;
+}
+ul li label{
+    cursor: pointer;
 }
