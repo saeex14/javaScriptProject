@@ -1,10 +1,10 @@
-const dayEl = document.getElementById('3');
+//Define a tiemr element 
+const dayEl = document.getElementById('days');
 const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('mins');
-const secondsEl = document.getElementById('seconds');
+const secondsEl = document.getElementById('secounds');
 
-
-function showTime() {
+function CounterDown() {
     const currentDate = new Date();
     const Birthday = new Date("5 Feb 2022");
 
@@ -19,12 +19,13 @@ function showTime() {
     const MinsCount = Math.floor( totalSecond / 60 ) % 60;
     const SecondsCount = Math.floor(totalSecond ) % 60 ; 
     
+    
     dayEl.innerHTML = DayCount;
     hoursEl.innerHTML = HoursCount; 
-    minsEl.innerHTML = MinsCount; 
+    minsEl.innerHTML = MinsCount;
     secondsEl.innerHTML = SecondsCount;
 }
 //Initional
-showTime();
+CounterDown();
 
-setInterval(showTime, 1000);
+setInterval(CounterDown, 1000);
