@@ -2,21 +2,21 @@
     <head>
          <meta charset="utf-8">
          <link rel="stylesheet" href="style.css">
-         <script src="script.js"></script>
+        
     </head>
     <body lang="en">
         <div class="countainer">
             <div class="qiuzBlock">
-                <h1>question</h1>
+                <h3 id="qtn">question</h3>
                 <ul>
-                    <li><input type="radio" name="question"><label for="question">question</label></input></li>
-                    <li><input type="radio" name="question"><label for="question">question</label></input></li>
-                    <li><input type="radio" name="question"><label for="question">question</label></input></li>
-                    <li><input type="radio" name="question"><label for="question">question</label></input></li>
+                    <li><input type="radio" name="question"><label for="question" id="ans1">question</label></input></li>
+                    <li><input type="radio" name="question"><label for="question" id="ans2">question</label></input></li>
+                    <li><input type="radio" name="question"><label for="question" id="ans3">question</label></input></li>
+                    <li><input type="radio" name="question"><label for="question" id="ans4">question</label></input></li>
                 </ul>
-                <button id="btn">next</button>
+                <button id="btn" onclick="loadQuiz()">next</button>
             </div>
         </div>
-
+        <script src="script.js"></script>
     </body>
 </html>
