@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family:Tahoma;
+    background-color: rgb(145, 95, 95);
+}
+input{
+    direction: rtl;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(23, 24, 34);
+    color: white;
+}
+#history{
+    padding:30px;
+
+}
+#show{
+    padding: 5rem 10px;
+    font-size:20px;
+    font-weight: bold;
+}
+.table{
+    text-align: center;
+    border-collapse:collapse;
+    background-color: rgb(23, 24, 34);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+}
+td{
+   border: 0px solid white ; 
+}
+#Ac,#none{
+    color: rgb(15, 150, 49);
+    padding:  18px 15px;
+    font-size: 19px;
+}
+#equal,#divid,#mines,#plus,#multi{
+    color:rgb(209, 57, 30);
+    font-size: 19px;
+}
+button{
+    border:0;
+    padding: 20px;
+    margin: 3px;
+    border-radius: 30px;
+    font-size: 18px;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(38, 38, 51);
+    color: white;
+}
+button:hover{
+    background-color: rgb(21, 21, 32);
+}
+.numbers{
+    background-color: rgb(23, 23, 31);
+    border-radius: 10%;
+}
