@@ -3,10 +3,16 @@
         <meta charset="utf-8">
          <title>calculator</title>
          <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
          <script src="script.js"></script>
     </head>
     <body>
        <table class="table">
+            <!-- <tr>
+                <td colspan="4">
+                    <button class="material-icons mode" id="mode_night">dark_mode</button>
+                    <button class="material-icons mode" id="mode_sun">light_mode</button></td>
+            </tr>    -->
            <tr>
                <td colspan="4"><input type="text" value=""id='history'></td>
            </tr>
@@ -15,34 +21,34 @@
            </tr>
            <div class="numbers">
                 <tr>
-                    <td><button id="Ac">AC</button></td>
-                    <td><button id="Ac">^</button></td>
-                    <td><button id="none">%</button></td>
-                    <td><button id="divid">/</button></td>
+                    <td><button id="Ac" class="button">AC</button></td>
+                    <td><button id="Ac" class="button">^</button></td>
+                    <td><button id="none" class="button">%</button></td>
+                    <td><button id="divid" class="button">/</button></td>
                 </tr>
                 <tr>
-                    <td><button id="btn">7</button></td>
-                    <td><button id="btn">8</button></td>
-                    <td><button id="btn">9</button></td>
-                    <td><button id="multi">x</button></td>
+                    <td><button id="btn" class="button">7</button></td>
+                    <td><button id="btn" class="button">8</button></td>
+                    <td><button id="btn" class="button">9</button></td>
+                    <td><button id="multi" class="button">x</button></td>
                 </tr>
                 <tr>
-                    <td><button id="btn">4</button></td>
-                    <td><button id="btn">5</button></td>
-                    <td><button id="btn">6</button></td>
-                    <td><button id="mines">-</button></td>
+                    <td><button id="btn" class="button">4</button></td>
+                    <td><button id="btn" class="button">5</button></td>
+                    <td><button id="btn" class="button">6</button></td>
+                    <td><button id="mines" class="button">-</button></td>
                 </tr>
                 <tr>
-                    <td><button id="btn">1</button></td>
-                    <td><button id="btn">2</button></td>
-                    <td><button id="btn">3</button></td>
-                    <td><button id="plus">+</button></td>
+                    <td><button id="btn" class="button">1</button></td>
+                    <td><button id="btn" class="button">2</button></td>
+                    <td><button id="btn" class="button">3</button></td>
+                    <td><button id="plus" class="button">+</button></td>
                 </tr>
                 <tr>
-                    <td><button id="btn">r</button></td>
-                    <td><button id="btn">0</button></td>
-                    <td><button id="btn">.</button></td>
-                    <td><button id="equal">=</button></td>
+                    <td><button id="btn" class="button material-icons" >refresh</button></td>
+                    <td><button id="btn" class="button">0</button></td>
+                    <td><button id="btn" class="button">.</button></td>
+                    <td><button id="equal" class="button">=</button></td>
                 </tr>
            </div>
        </table>

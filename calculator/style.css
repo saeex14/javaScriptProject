@@ -45,12 +45,12 @@ td{
     color:rgb(209, 57, 30);
     font-size: 19px;
 }
-button{
+.button{
     border:0;
     padding: 20px;
     margin: 3px;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 20px;
     width: 80px;
     height: 80px;
     background-color: rgb(38, 38, 51);
@@ -58,8 +58,16 @@ button{
 }
 button:hover{
     background-color: rgb(21, 21, 32);
-}
-.numbers{
-    background-color: rgb(23, 23, 31);
-    border-radius: 10%;
-}
+/* }
+.mode{ 
+    border:0;
+    padding: 10px;
+    margin: -10px;
+    font-size: 18px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(38, 38, 51);
+    color: white;
+
+} */
