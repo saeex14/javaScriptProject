@@ -9,7 +9,7 @@ body{
     background-color: rgb(145, 95, 95);
 }
 input{
-    direction: rtl;
+    direction: ltr;
     border: 0;
     margin: 0;
     width: 100%;
@@ -36,7 +36,7 @@ input{
 td{
    border: 0px solid white ; 
 }
-#Ac,#none{
+#Ac,#pow,#none{
     color: rgb(15, 150, 49);
     padding:  18px 15px;
     font-size: 19px;
@@ -58,6 +58,7 @@ td{
 }
 button:hover{
     background-color: rgb(21, 21, 32);
+ }
 /* }
 .mode{ 
     border:0;
