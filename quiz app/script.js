@@ -34,6 +34,7 @@ const ans2 = document.getElementById('ans2');
 const ans3 = document.getElementById('ans3');
 const ans4 = document.getElementById('ans4');
 const btn = document.getElementById('btn');
+const resultBlock = document.getElementsByClassName('countainer');
 
 var currentQuestion = 0;
 var rightAns = 0; 
@@ -46,14 +47,10 @@ function loadQuiz () {
           currentQuestion ++;
 
           //changing the text of button to undrestand the client that Quiz is finish
-          if (currentQuestion == 4){
-            
+          if (currentQuestion == 4)
             btn.innerHTML = 'finish';
-          
-        }
-
       }else{
-            return alert('Quiz is finished');
+          showResult();
       }
       //set the quiz
       qtn.innerHTML = questinEl.question;
@@ -64,17 +61,30 @@ function loadQuiz () {
       
 }
 function selectAns () {
-     const ans = document.querySelectorAll('question');
-     
-     ans.forEach((ans) => {
 
-         console.log(ans.ariaChecked);
+     const answerEl = document.querySelectorAll(".question");
      
-        })
+     answerEl.forEach((answer) => {
+    
+        if(answer.checked) 
+                
+            if(currentQuestion - 1  <= 4){
+                if(answer.id === dataQuiz[currentQuestion - 1].current)
+                rightAns++;
+            }      
+           
+        });
+
+}
+function showResult () {
+
+      resultBlock.innerHTML = "<h2> your answered correctly at </h2>";
 
 }
 btn.addEventListener('click', () =>{
+   
+    selectAns();
     loadQuiz();
-})
+});
 //Initional 
 loadQuiz();
