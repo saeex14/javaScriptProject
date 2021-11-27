@@ -28,19 +28,21 @@ const dataQuiz = [{
     current:'a'
 }]
 
+const answerEl = document.querySelectorAll(".question");
 const qtn = document.getElementById('qtn');
 const ans1 = document.getElementById('ans1');
 const ans2 = document.getElementById('ans2');
 const ans3 = document.getElementById('ans3');
 const ans4 = document.getElementById('ans4');
 const btn = document.getElementById('btn');
-const resultBlock = document.getElementsByClassName('countainer');
+var resultBlock = document.getElementById('qiuzBlock');
 
 var currentQuestion = 0;
 var rightAns = 0; 
 
 function loadQuiz () {
-  
+      deletSelector();
+      
       const questinEl = dataQuiz[currentQuestion];
       
       if ( currentQuestion <= dataQuiz.length - 1 ) {
@@ -51,7 +53,8 @@ function loadQuiz () {
             btn.innerHTML = 'finish';
       }else{
           showResult();
-      }
+          return;
+        }
       //set the quiz
       qtn.innerHTML = questinEl.question;
       ans1.innerHTML = questinEl.a;
@@ -62,7 +65,6 @@ function loadQuiz () {
 }
 function selectAns () {
 
-     const answerEl = document.querySelectorAll(".question");
      
      answerEl.forEach((answer) => {
     
@@ -70,16 +72,25 @@ function selectAns () {
                 
             if(currentQuestion - 1  <= 4){
                 if(answer.id === dataQuiz[currentQuestion - 1].current)
-                rightAns++;
-            }      
+                {
+                    rightAns++ ;
+                }     
+
+            } 
            
         });
 
 }
+function deletSelector(){
+
+    answerEl.forEach((answer) =>{
+        answer.checked = false;
+    })
+}
 function showResult () {
 
-      resultBlock.innerHTML = "<h2> your answered correctly at </h2>";
-
+    resultBlock.innerHTML = `<h3>your answered correctly at ${rightAns} / ${dataQuiz.length}</h3>`;
+    
 }
 btn.addEventListener('click', () =>{
    
