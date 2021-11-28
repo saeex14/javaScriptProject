@@ -6,8 +6,14 @@ const plus = document.getElementById('plus');
 const Ac = document.getElementById('Ac');
 const refresh = document.getElementById('refresh');
 const mines = document.getElementById('mines');
+const multi = document.getElementById('multi');
+const divid = document.getElementById('divid');
+const none = document.getElementById('none');
+const pow = document.getElementById('pow');
+const point = document.getElementById('point');
 
 var totalequal = 0;
+var per = 0;
 
 function addNum (number) {
 
@@ -16,9 +22,45 @@ function addNum (number) {
        else
         inputShow.value += number;
 }
+point.addEventListener('click', () =>{
+    if(inputShow.value == 0){
+        inputHis.value = inputShow.value + '.';
+    }
+})
+pow.addEventListener('click', () =>{
+    per = inputShow.value;
+    inputHis.value = inputShow.value + '^';
+    if (totalequal == 0 )
+        totalequal =  parseInt(inputShow.value);
+    else
+        totalequal = parseInt(inputShow.value);
+    inputShow.value = 0;
+})
+none.addEventListener('click', () =>{ 
+ // TODO:pow two number 
+});
+divid.addEventListener('click', () =>{
+    inputHis.value = inputShow.value + '/';
+    if (totalequal == 0 )
+        totalequal =  parseInt(inputShow.value);
+    else
+        totalequal /= parseInt(inputShow.value);
+    inputShow.value = 0;
+});
+multi.addEventListener('click', () =>{
+    inputHis.value *= inputShow.value + '*';
+    if (totalequal == 0 )
+        totalequal =  parseInt(inputShow.value);
+    else
+        totalequal *= parseInt(inputShow.value);
+    inputShow.value = 0;
+});
 mines.addEventListener('click', () =>{
     inputHis.value += inputShow.value + '-';
-    totalequal -= parseInt(inputShow.value);
+    if (totalequal == 0 )
+        totalequal +=  parseInt(inputShow.value);
+    else
+        totalequal -= parseInt(inputShow.value);
     inputShow.value = 0;
 });
 refresh.addEventListener('click', () =>{
