@@ -1,0 +1,218 @@
+@font-face {
+    font-family: IranSans;
+    src: url(font/Iranian\ Sans.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: nazanin;
+    src: url(font/B-NAZANIN.TTF);
+}
+body{
+    direction: rtl;
+    font-family:nazanin;
+    margin: auto;
+}
+.goods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#logo{
+    padding:0 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 1rem;
+}
+main{
+    background-color: hsl(0, 0%, 91%) ;
+    display: block;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.search{
+    margin-right: 100px;
+    border-radius: 40px;
+    display: flex;
+}
+.search input{
+    height: 30px;
+    border-radius: 10px;
+    border:1px solid black;
+}
+.search button{
+    border:0;
+}
+.menu{
+    background-color: #fff;
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+}
+.menu ul li {
+    padding: 30px 20px;
+}
+.explain-shop{
+    color: white;
+    background-color: rgb(28, 104, 91);
+    display: flex;
+}
+.explation-shop-text{
+   font-size: large;
+   line-height: 30px;
+   text-align: center;
+   padding: 30px 30px;
+}
+.show-goods{
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px 9px;
+    margin:20px;
+    width: 300px;
+    height: 90px;
+}
+.show-goods img{
+    border-radius: 20px;
+    padding-left: 6px;
+    width: 80px;
+    height: 80px;
+}
+.show-goods div{
+  line-height: 0;
+}
+#special-goods{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+#fullimg{
+    overflow:hidden;
+    height: 20rem;
+    width: 63rem;
+    margin-top: 20px;
+    border-radius: 9px;
+}
+#img {
+    display: flex;    
+}     
+#img img{
+    height: 20rem;
+    width:63rem;
+}
+#transform{
+    position: absolute;
+    border-radius: 3rem;
+    background-color: rgb(116, 109, 109);
+    opacity:60%;
+}
+.btn{
+    border: 0;
+    margin: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.btn:focus{
+    background-color: rgb(46, 89, 100);
+}
+#explain-shop2{
+    background-color: white;
+    display: flex;
+    padding-top: 40px;
+    height: 37rem;
+}
+#explain-shop2-text{
+    position:absolute;  
+    display: flex;
+    margin-top: 15rem;
+    justify-content: center;
+}
+#explain-shop2-text div {
+    margin: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#explain-shop2-text div img{
+    height: 50%;
+    width: 80%;
+    border-radius: 10px;
+}
+#fast-order{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#fast-order p{
+    font-size: 18px;
+}
+#fast-order a{
+    background-color: rgb(73, 223, 105);
+    color: white;
+    font-size: 30px;
+    padding:10px 10px;
+    border-radius: 1rem;
+    margin-bottom: 25px;
+}
+#fast-order div{
+    margin-top: 40px;
+}
+video{
+    border:0;
+    border-radius: 1rem;
+}
+#point-shop{
+    margin: 40px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#point-shop div{
+    display: flex;
+    height: 10rem;
+    width: 500px;
+    padding: 10px 10px;
+    border-radius: 1rem;
+    margin: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+#point-shop div div{
+    flex-direction: column;
+}
+#point-shop div div h3{
+    margin: 0;
+}
+footer{
+    padding: 20 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#information{
+   margin-left: 50px;
+}
+#information a{
+    padding-left: 10px;
+
+}
+.col-1{width:8.3%;}
+.col-2{width:16.6%;}
+.col-3{width:25%;}
+.col-4{width:33.3%;}
+.col-5{width:41.6%;}
+.col-6{width:50%;}  
+.col-7{width:58.3%;}
+.col-8{width:66.6%;}
+.col-9{width:75%;}
+.col-10{width:83.3%;}
+.col-11{width:91.6%;}
+.col-12{width:100%;}
